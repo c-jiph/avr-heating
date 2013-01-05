@@ -1,7 +1,7 @@
 avr-heating
 ===========
-Simple at2313 timer-based heating control system based around a USB relay
-control board available at:
+Simple at2313 heating control system based around a USB relay control board
+available at:
 
 http://www.sigma-shop.com/product/67/usb-relay-controller-one-channel-pcb.html
 
@@ -12,17 +12,6 @@ using a timed schedule.
 To control the heating in my home, I by-passed an existing wall-mounted
 thermostat (which is just temperature controlled switch) and connected the
 wires to the board's mains relay.
-
-
-Licensing
----------
-It probably would have been easier to have the original source to the MCU on
-the relay board to work with. Unfortunately the manufacturer refused to relesae
-it to me and I wsa forced to write all this from scratch.
-
-To ensure others in future are not stuck in  similar position I am making this
-source available publicly under revision 2 of the GPL.  Details can be found in
-LICENSING.
 
 
 Dependencies
@@ -80,3 +69,14 @@ Known Issues
 * My implementation of the USB-UART command rx/tx doesn't seem to be completely
   reliable hence there are a few sleeps in ctrl.rb. This could probably be
   fixed by someone a bit more experienced with AVR programming.
+
+
+Licensing
+---------
+It probably would have been easier to have the original source to the MCU on
+the relay board to work with. Unfortunately the manufacturer declined to release
+it to me and I was forced to write this from scratch.
+
+To ensure others in future are not stuck in a similar position I am making this
+source available publicly under revision 3 of the GPL.  Details can be found in
+the LICENSE file.
